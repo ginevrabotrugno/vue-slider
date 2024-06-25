@@ -64,7 +64,18 @@ createApp({
     },
     // tutte le funzioni (metodi) della applicazione   
     methods: {
-
+        nextSlide (){
+            this.currentSlide++
+            if (this.currentSlide > this.slides.length - 1) {
+                this.currentSlide = 0;
+            }
+        },
+        prevSlide () {
+            this.currentSlide--
+            if (this.currentSlide < 0) {
+                this.currentSlide = this.slides.length - 1;
+            }
+        }
         
     }
 
