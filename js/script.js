@@ -24,9 +24,9 @@
 
 // console.log(slides);
 
+
 // estrapolo il metodo di creazione app vue
 const { createApp } = Vue;
-
 
 createApp({
     // tutti i dati dell'applicazione
@@ -58,7 +58,8 @@ createApp({
                     title: "Marvel's Avengers",
                     text: 'Marvel\'s Avengers is an epic, third-person, action-adventure game that combines an original, cinematic story with single-player and co-operative gameplay.',
                 }
-            ]
+            ],
+            currentSlide: 0
         }
     },
     // tutte le funzioni (metodi) della applicazione   
